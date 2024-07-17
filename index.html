@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<link rel="stylesheet" href="css/feedbackstylesheet.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Feedback</h2>
+    <form action="https://formspree.io/f/mrbzbrjd" method="POST">
+        <div class="form-group">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" title="Type your First Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Last Name:</label>
+            <input type="text" id="name" name="name" title="Type your Last Name" required>
+        </div>
+        <p>Please provide feedback on the quality of our service.</p>
+        <input type="radio" id="Excellent" name="feedback" value="Excellent">
+        <label style="display: inline-block;" for="Excellent">Excellent</label>
+        <input type="radio" id="Very_Good" name="feedback" value="Very_Good">
+        <label style="display: inline-block;" for="Very_Good">Very Good</label>
+        <input type="radio" id="blue" name="feedback" value="blue">
+        <label style="display: inline-block;" for="blue">Good</label>
+        <input type="radio" id="Average" name="feedback" value="Average">
+        <label style="display: inline-block;" for="Average">Average</label>
+        <input type="radio" id="Poor" name="feedback" value="Poor">
+        <label style="display: inline-block;" for="Poor">Poor</label>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Massege" required title="Type your Massege"></textarea>
+        </div>
+        <input type="submit" value="Submit" title="Submit">
+    </form>
+</div>
+<div class="button-container">
+    <button id="myButton"><img src="https://cdn.icon-icons.com/icons2/1458/PNG/512/homebutton_99695.png" width="60px" alt="Contact Us!"></button>
+</div>
+
+</body>
+
+<script>
+    document.getElementById('myButton').addEventListener('click', function() {
+        window.location.href = 'https://quizleapsbooks.github.io/Home_Quiz_Leap_Books/';
+    });
+    </script>
+</html>
